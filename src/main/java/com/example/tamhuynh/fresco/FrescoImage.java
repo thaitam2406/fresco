@@ -18,14 +18,17 @@ public class FrescoImage extends LinearLayout {
 
     public FrescoImage(Context context) {
         super(context);
+        initUI(context);
     }
 
     public FrescoImage(Context context, AttributeSet attrs) {
         super(context, attrs);
+        initUI(context);
     }
 
     public FrescoImage(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        initUI(context);
     }
 
     private void initUI(Context context){
@@ -34,7 +37,7 @@ public class FrescoImage extends LinearLayout {
     }
 
     public void setBackgroundImage(String url){
-        Uri uri = Uri.parse("https://raw.githubusercontent.com/facebook/fresco/gh-pages/static/fresco-logo.png");
+        Uri uri = Uri.parse(url);
         simpleDraweeView.setImageURI(uri);
     }
 
