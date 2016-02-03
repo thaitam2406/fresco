@@ -3,5 +3,6 @@
     package="com.example.tamhuynh.fresco">
 
 
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
